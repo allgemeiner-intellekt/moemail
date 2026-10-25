@@ -101,6 +101,7 @@ export const {
   }),
   providers: [
     GitHub({
+      issuer: "https://github.com/login/oauth",
       clientId: process.env.AUTH_GITHUB_ID,
       clientSecret: process.env.AUTH_GITHUB_SECRET,
       allowDangerousEmailAccountLinking: true,
